@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>672</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>720</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="main_widget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="main_tab">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="market_tab">
+       <attribute name="title">
+        <string>MARKET</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <property name="rightMargin">
+         <number>2</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>2</number>
+        </property>
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="main_layout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="top_frame">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="0">
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                 <item>
+                  <widget class="QGraphicsView" name="graphicsView">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>64</width>
+                     <height>64</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>64</width>
+                     <height>64</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="item_descr_layout">
+                   <item>
+                    <widget class="QLabel" name="parents_label">
+                     <property name="maximumSize">
+                      <size>
+                       <width>340</width>
+                       <height>16</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>-path-</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="name_label">
+                     <property name="maximumSize">
+                      <size>
+                       <width>340</width>
+                       <height>16</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>10</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>-name-</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="volume_label">
+                     <property name="maximumSize">
+                      <size>
+                       <width>340</width>
+                       <height>16</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>-volume-</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QGridLayout" name="price_layout">
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="jita_buy_value">
+                   <property name="minimumSize">
+                    <size>
+                     <width>80</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>80</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>-</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QLabel" name="jita_spread_label">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>SPREAD</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QLabel" name="jita_spread_value">
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>60</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>-</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLabel" name="jita_sell_value">
+                   <property name="minimumSize">
+                    <size>
+                     <width>80</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>80</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>-</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLabel" name="jita_buy_label">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>BUY</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="jita_sell_label">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>SELL</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="content_frame">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_19" rowstretch="0">
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="main_tabs_lo">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QTabWidget" name="sell_tabs">
+                 <property name="currentIndex">
+                  <number>0</number>
+                 </property>
+                 <widget class="QWidget" name="us_tab">
+                  <attribute name="title">
+                   <string>Universe</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_3">
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="us_tab_lo">
+                     <item>
+                      <widget class="QLabel" name="us_label">
+                       <property name="text">
+                        <string>SELL:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableView" name="us_list"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="js_tab">
+                  <attribute name="title">
+                   <string>Jita</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_5">
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="js_tab_lo">
+                     <item>
+                      <widget class="QLabel" name="js_label">
+                       <property name="text">
+                        <string>SELL:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableView" name="js_list"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="ps_tab">
+                  <attribute name="title">
+                   <string>Perimeter</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_7">
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="ps_tab_lo">
+                     <item>
+                      <widget class="QLabel" name="ps_label">
+                       <property name="text">
+                        <string>SELL:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableView" name="ps_list"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="as_tab">
+                  <attribute name="title">
+                   <string>Amarr</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_8">
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="as_tab_lo">
+                     <item>
+                      <widget class="QLabel" name="as_label">
+                       <property name="text">
+                        <string>SELL:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableView" name="as_list"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="ds_tab">
+                  <attribute name="title">
+                   <string>Dodixie</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_9">
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="ds_tab_lo">
+                     <item>
+                      <widget class="QLabel" name="ds_label">
+                       <property name="text">
+                        <string>SELL:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableView" name="ds_list"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="hs_tab">
+                  <attribute name="title">
+                   <string>Hek</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_10">
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="hs_tab_lo">
+                     <item>
+                      <widget class="QLabel" name="hs_label">
+                       <property name="text">
+                        <string>SELL:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableView" name="hs_list"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="rs_tab">
+                  <attribute name="title">
+                   <string>Rens</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_11">
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="rs_tab_lo">
+                     <item>
+                      <widget class="QLabel" name="rs_label">
+                       <property name="text">
+                        <string>SELL:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableView" name="rs_list"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QTabWidget" name="buy_tabs">
+                 <property name="currentIndex">
+                  <number>0</number>
+                 </property>
+                 <widget class="QWidget" name="ub_tab">
+                  <attribute name="title">
+                   <string>Universe</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_12">
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="ub_tab_lo">
+                     <item>
+                      <widget class="QLabel" name="ub_label">
+                       <property name="text">
+                        <string>BUY:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableView" name="ub_list"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="jb_tab">
+                  <attribute name="title">
+                   <string>Jita</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_13">
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="jb_tab_lo">
+                     <item>
+                      <widget class="QLabel" name="jb_label">
+                       <property name="text">
+                        <string>BUY:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableView" name="jb_list"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="pb_tab">
+                  <attribute name="title">
+                   <string>Perimeter</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_14">
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="pb_tab_lo">
+                     <item>
+                      <widget class="QLabel" name="pb_label">
+                       <property name="text">
+                        <string>BUY:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableView" name="pb_list"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="ab_tab">
+                  <attribute name="title">
+                   <string>Amarr</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_15">
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="ab_tab_lo">
+                     <item>
+                      <widget class="QLabel" name="ab_label">
+                       <property name="text">
+                        <string>BUY:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableView" name="ab_list"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="db_tab">
+                  <attribute name="title">
+                   <string>Dodixie</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_16">
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="db_tab_lo">
+                     <item>
+                      <widget class="QLabel" name="db_label">
+                       <property name="text">
+                        <string>BUY:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableView" name="db_list"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="hb_tab">
+                  <attribute name="title">
+                   <string>Hek</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_17">
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="hb_tab_lo">
+                     <item>
+                      <widget class="QLabel" name="hb_label">
+                       <property name="text">
+                        <string>BUY:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableView" name="hb_list"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="rb_tab">
+                  <attribute name="title">
+                   <string>Rens</string>
+                  </attribute>
+                  <layout class="QGridLayout" name="gridLayout_18">
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="rb_tab_lo">
+                     <item>
+                      <widget class="QLabel" name="rb_label">
+                       <property name="text">
+                        <string>BUY:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableView" name="rb_list"/>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="minerals_tab">
+       <attribute name="title">
+        <string>MINERALS</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="moonmats_tab">
+       <attribute name="title">
+        <string>MOONMATS</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="planetary_tab">
+       <attribute name="title">
+        <string>PLANETARY</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="margin_tab">
+       <attribute name="title">
+        <string>MARGIN</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
