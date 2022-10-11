@@ -3,7 +3,7 @@ def sql_query(func):
     from contextlib import closing
 
     def wrapper(*args, **kwargs):
-        with closing(sqlite3.connect('db/eve.db')) as connect:
+        with closing(sqlite3.connect('db/db.db')) as connect:
             try:
                 connect.row_factory = sqlite3.Row
                 cursor = connect.cursor()
